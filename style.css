@@ -1,7 +1,8 @@
 *,:before, :after{
     padding:0;
     margin:0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 body{
     font-family: 'verdana';
@@ -23,12 +24,69 @@ body{
 }
 .box{
     background:crimson;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     min-height:calc(100vh - 50px);
 }
+.btn{
+    display:block;
+    padding:10px 30px;
+    background-color:red;
+    color:#fff;
+    border-radius:3px;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    border:1px solid #fff;
+    -webkit-transition:all 0.3s linear;    -webkit-transition:all 0.3s linear;    transition:all 0.3s linear;
+
+}
+.result{
+    min-width:400px;
+    min-height:100px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    text-align: center;
+    background-color:#fff;
+    color: crimson;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            -webkit-box-pack: center;
+                justify-content: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom:30px;
+}
+#input{
+  display: inline-block;
+  padding: 8px 20px;
+  border:none;
+  background:#fff;
+  color:crimson;
+  margin-bottom:20px;
+  outline:none;
+}
+::placeholder{color:crimson;}
