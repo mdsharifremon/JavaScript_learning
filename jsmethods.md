@@ -116,6 +116,14 @@ var length = str.length;
 <a name="array-method"></a>
 ## Array Method
 
+```javascript
+arr.map();
+arr.forEach();
+arr.reduce();
+arr.
+
+```
+
 <a name="object-method"></a>
 ## Object Method
 
