@@ -6,10 +6,6 @@
 * [Object Methods](#object-method)
 
 
-
-
-
-
 <a name="string-method"></a>
 
 # String Methods
@@ -116,11 +112,29 @@ var length = str.length;
 <a name="array-method"></a>
 ## Array Method
 
+* [array traversing](#array-traversing)
+
+<a name="array-traversing"></a>
+
+### Array Traversing
+    # Go for each element or value of an array is called array traversing.
+    # A function or method that run for each value is array traversing
+    # An array can be traverse with loop or array build in methods.
+
+#### Loop In Array
 ```javascript
-arr.map();
-arr.forEach();
-arr.reduce();
-arr.
+// Simple Loop In single Array
+for(let i = 0; i < arr.length; i++){
+    console.log(arr[i]);
+}
+
+// double loop in multidimentional array
+for(let i = 0; i < arr.length; i++){
+    for(let j = 0; j < i.length; j++){
+        console.log(arr[i][j]);
+    }
+}
+
 
 ```
 
