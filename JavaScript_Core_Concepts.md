@@ -8,7 +8,7 @@
 
 <details>
 <summary><b> JavaScript Hoisting</b></summary>
-
+<br><br>
 __Hoisting__:
 JavaScript engine working way is basically called hoisting.
 JavaScript engine works in two step.
@@ -54,6 +54,7 @@ __Note__: For details on printing priority look at scope Example underneath this
 
 <details>
 <summary><b> JavaScript Scope </b></summary>
+<br>
 <b>Scope</b> is Block {}. A variable or a function can be remembered, accessed  or called from where that is scope.
 <br><br>
 
