@@ -58,3 +58,15 @@ __BlockChain Scope__:  Blockchain scope is relational scope.<br>
 ```
 
 </details>
+
+
+<details>
+<summary><b> JavaScript Hoisting</b></summary>
+
+```JavaScript
+
+// Example of Hoisting.
+
+```
+
+</details>
