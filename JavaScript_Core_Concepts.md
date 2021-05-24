@@ -1,11 +1,15 @@
 # JavaScript Core Concepts
 <details>
-      <summary>JavaScript Scope</summary>
+<summary>JavaScript Scope</summary>
 
 ## JavaScript Scope
+
 Scope is Block {}. A variable or a function can be remembered or accessed from where that is scope.
+
 __Lexical Scope__: Lexical scope is basic concept of scope.
-  __BlockChain Scope__:  Blockchain scope is relational scope.<br> relation between scopes from parents, child, siblings is blockchain scope.<br> Blockchain means maintain chain between parents, child and siblings.
+__BlockChain Scope__:  Blockchain scope is relational scope.<br>
+   relation between scopes from parents, child, siblings is blockchain scope. <br>
+    Blockchain means maintain chain between parents, child and siblings.
 
 
 ```JavaScript
