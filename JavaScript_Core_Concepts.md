@@ -1,6 +1,6 @@
 # JavaScript Core Concepts
 <details>
-<summary><h2> JavaScript Scope </h2></summary>
+<summary><b> JavaScript Scope </b></summary>
 
 Scope is Block {}. A variable or a function can be remembered or accessed from where that is scope.
 <br><br>
