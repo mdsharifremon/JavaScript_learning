@@ -13,9 +13,9 @@
 JavaScript engine works in two step.<br>
 JavaScript Code will run line by line. <br>
 
-__First step__ it declarer variable and assign value undefined to each variable whether it is assigned or not. It will not look for its value. <br>
-For the function it will take the reference of function. It will not execute anything. <br><br>
-__Second Step__ it will look for execution and look for values for variable. If it found variables got its value it will print that. Otherwise it will print undefined.<br>
+__First step__ it declarer variable and assign value undefined to each variable whether it is assigned or not. It will not look for its value.
+For the function it will take the reference of function. It will not execute anything. <br>
+__Second Step__ it will look for execution and look for values for variable. If it found variables got its value it will print that. Otherwise it will print undefined.
 For function it will look for its call. where the function is called it will go for that.  it will go line by line. when it will found one more function is called in a function it will go for that one and skip others.
 
 ```JavaScript
