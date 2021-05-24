@@ -6,8 +6,8 @@ Scope is Block {}. A variable or a function can be remembered or accessed from w
 <br><br>
 __Lexical Scope__: Lexical scope is basic concept of scope. <br>
 __BlockChain Scope__:  Blockchain scope is relational scope.<br>
-   relation between scopes from parents, child, siblings is blockchain scope. <br>
-    Blockchain means maintain chain between parents, child and siblings.
+  Relation between scopes like  parents, child, siblings is blockchain scope. <br>
+    Blockchain means maintain a chain between parents, child and siblings.
 
 
 ```JavaScript
@@ -54,5 +54,7 @@ __BlockChain Scope__:  Blockchain scope is relational scope.<br>
       // C => a, b, d, C(), B(), D(), A();
       // D => a, n, A(), D();
       // Result => 12, 23, 23, 34, 56,67
-      ```
+
+```
+
 </details>
