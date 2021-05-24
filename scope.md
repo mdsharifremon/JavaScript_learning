@@ -1,10 +1,5 @@
-
-     const BTN = document.querySelector('#myBtn');
-     const RESULT = document.querySelector('.text');
-     const INPUT = document.getElementById('input').value;
-BTN.addEventListener('click', function(){
-
-});
+# JAVASCRIPT Scope
+```JAVASCRIPT
 var a = 11;
 function A(){
 
@@ -45,3 +40,4 @@ A();
 // C => a, b, d, C(), B(), D(), A();
 // D => a, n, A(), D();
 // Result => 12, 23, 23, 34, 56,67
+```
