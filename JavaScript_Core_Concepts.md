@@ -10,13 +10,13 @@
 <summary><b> JavaScript Hoisting</b></summary>
 
 ***Hoisting*** : JavaScript engine working way is basically called hoisting.
-JavaScript engine work is two step.<br>
-JavaScript Code will run line be line. <br>
-First step it declarer variable and assign value undefined to each variable whether it is assigned or not. It will not look for its value. <br>
-For the function it will take the reference of function. It will not execute anything. <br>
+JavaScript engine works in two step.<br>
+JavaScript Code will run line by line. <br>
 
+__First step__ it declarer variable and assign value undefined to each variable whether it is assigned or not. It will not look for its value. <br>
+For the function it will take the reference of function. It will not execute anything. <br><br>
 
-Second Step it will look for execution and look for values for variable. If it found variables got its value it will print that. Otherwise it will print undefined.<br>
+__Second Step__ it will look for execution and look for values for variable. If it found variables got its value it will print that. Otherwise it will print undefined.<br>
 For function it will look for its call. where the function is called it will go for that.  it will go line by line. when it will found one more function is called in a function it will go for that one and skip others.
 
 ```JavaScript
@@ -43,7 +43,7 @@ function one(){
 };
 newFunc(); // it will return its real value.
 ```
-***Note:*** For Printing Priority look at scope Example underneath this.
+***Note:*** For details on printing priority look at scope Example underneath this.
 </details>
 
 <!------------------------------------------------------
@@ -57,10 +57,8 @@ newFunc(); // it will return its real value.
 
 Scope is Block {}. A variable or a function can be remembered, accessed  or called from where that is scope.
 <br><br>
-
 __Lexical Scope__: JavaScript Compiler tokenize every word variable, valued and functions that's called ***Lexim****  <br>
 When Compiler start leximing Compiler fix scope for every variable, values, functions. This core scoping concept is called ***Lexical Scope***. <br><br>
-
 __BlockChain Scope__:  Blockchain scope is relational scope.<br>
   Relation between scopes like  parents, child, siblings is blockchain scope. <br>
     Blockchain means maintain a chain between parents, child and siblings.
@@ -125,7 +123,7 @@ __BlockChain Scope__:  Blockchain scope is relational scope.<br>
 <summary><b> JavaScript Closure</b></summary>
 
 ***Closure:**** Closure is when function is able to remember and access its lexical scope even When <br>
-the function executing outside of its lexical scope. 
+the function executing outside of its lexical scope.
 
 
 ```JavaScript
