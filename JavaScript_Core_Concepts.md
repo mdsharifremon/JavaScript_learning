@@ -60,7 +60,6 @@ Scope is Block {}. A variable or a function can be remembered, accessed  or call
 __Lexical Scope__:
  JavaScript Compiler tokenize every word variable, valued and functions that's called ***Lexim***
  When Compiler start leximing Compiler fix scope for every variable, values, functions. This core scoping concept is called ***Lexical Scope***. <br><br>
-
 __BlockChain Scope__:  
 Blockchain scope is relational scope.
 Relation between scopes like  parents, child, siblings is blockchain scope.
