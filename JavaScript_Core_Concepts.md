@@ -8,8 +8,8 @@
 
 <details>
 <summary><b> JavaScript Hoisting</b></summary>
-
-***Hoisting*** :
+<br>
+__Hoisting:__
 JavaScript engine working way is basically called hoisting.
 JavaScript engine works in two step.
 JavaScript Code will run line by line.
@@ -54,14 +54,13 @@ __Note__: For details on printing priority look at scope Example underneath this
 
 <details>
 <summary><b> JavaScript Scope </b></summary>
-
-Scope is Block {}. A variable or a function can be remembered, accessed  or called from where that is scope.
+<br>
+__Scope__ is Block {}. A variable or a function can be remembered, accessed  or called from where that is scope.
 <br><br>
 __Lexical Scope__:
  JavaScript Compiler tokenize every word variable, valued and functions that's called ***Lexim***
  When Compiler start leximing Compiler fix scope for every variable, values, functions. This core scoping concept is called ***Lexical Scope***. <br><br>
-__BlockChain Scope__:  
-Blockchain scope is relational scope.
+__BlockChain Scope__:  Blockchain scope is relational scope.
 Relation between scopes like  parents, child, siblings is blockchain scope.
 Blockchain means maintain a chain between parents, child and siblings.
 
