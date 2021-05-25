@@ -8,15 +8,16 @@
 
 <details>
 <summary><b> JavaScript Hoisting</b></summary>
-<br><br>
-__Hoisting__:
+
+<b>Hoisting:</b>
 JavaScript engine working way is basically called hoisting.
 JavaScript engine works in two step.
-JavaScript Code will run line by line.
-<br>
-__First step__ it declarer variable and assign value undefined to each variable whether it is assigned or not. It will not look for its value.
+JavaScript Code will run line by line.<br>
+
+__First step__  it declarer variable and assign value undefined to each variable whether it is assigned or not. It will not look for its value.
 For the function it will take the reference of function. It will not execute anything. <br><br>
-__Second Step__ it will look for execution and look for values for variable. If it found variables got its value it will print that. Otherwise it will print undefined.
+
+__Second Step__  it will look for execution and look for values for variable. If it found variables got its value it will print that. Otherwise it will print undefined.
 For function it will look for its call. where the function is called it will go for that.  it will go line by line. when it will found one more function is called in a function it will go for that one and skip others.
 
 ```JavaScript
@@ -54,7 +55,6 @@ __Note__: For details on printing priority look at scope Example underneath this
 
 <details>
 <summary><b> JavaScript Scope </b></summary>
-<br>
 <b>Scope</b> is Block {}. A variable or a function can be remembered, accessed  or called from where that is scope.
 <br><br>
 
@@ -124,13 +124,22 @@ Blockchain means maintain a chain between parents, child and siblings.
 <details>
 <summary><b> JavaScript Closure</b></summary>
 
-***Closure:*** Closure is when function is able to remember and access its lexical scope even When <br>
-the function executing outside of its lexical scope.
+***Closure:*** Closure is when function is able to remember and access its lexical scope even When the function executing outside of its lexical scope.
+A closure is  a function having access to the parent scope, even after the parent function has closed.
 
 
 ```JavaScript
 
 // Example of Closure.
+var a = (function(){
+  var counter = 1;
+  return function(){
+    return counter++;
+  }
+})(); // Self Invokable Function.
+console.log(a()); // return 1
+console.log(a()); // return 2
+console.log(a()); // return 3
 
 ```
 
