@@ -12,14 +12,16 @@
 <b>Hoisting:</b>
 JavaScript engine working way is basically called hoisting.
 JavaScript engine works in two step.
-JavaScript Code will run line by line.<br>
+JavaScript Code will run line by line. Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope.
+Hoisting applies to variable declarations and to function declarations.
+Because of this, JavaScript functions can be called before they are declared:<br>
 
 __First step__  it declarer variable and assign value undefined to each variable whether it is assigned or not. It will not look for its value.
 For the function it will take the reference of function. It will not execute anything. <br><br>
-
 __Second Step__  it will look for execution and look for values for variable. If it found variables got its value it will print that. Otherwise it will print undefined.
 For function it will look for its call. where the function is called it will go for that.  it will go line by line. when it will found one more function is called in a function it will go for that one and skip others.
 
+__Note__: To avoid error declare variables at the top of the document.
 ```JavaScript
 
 // Example of Hoisting.
@@ -55,7 +57,7 @@ __Note__: For details on printing priority look at scope Example underneath this
 
 <details>
 <summary><b> JavaScript Scope </b></summary>
-<b>Scope</b> is Block {}. A variable or a function can be remembered, accessed  or called from where that is scope.
+<b>Scope</b> is Block {}. A variable or a function can be remembered, accessed  or called from where that is scope. Scope determines the accessibility of variables, objects, and functions from different parts of the code.
 <br><br>
 
 __Lexical Scope__:
@@ -114,6 +116,26 @@ Blockchain means maintain a chain between parents, child and siblings.
 ```
 
 </details>
+
+<!------------------------------------------------------
+---------------------------------------------------------
+#######     var, let, const Strict Mode  #######
+---------------------------------------------------------
+-------------------------------------------------------->
+
+<details>
+<summary><b> var, let, const, strict mode</b></summary>
+
+```JavaScript
+
+
+
+
+```
+
+</details>
+
+
 
 <!------------------------------------------------------
 ---------------------------------------------------------

@@ -1,8 +1,13 @@
 # JavaScript Function
- 
+
 * [Pure Function](#pure-function)
 * [First Class Function](#first-class-function)
 * [Higher Order Function](#higher-order-function)
+* [Function Expression](#function-expression)
+* [Anonymous Function](#anonymous-function)
+* [Function Return Function](#function-return)
+* [Arrow Function](#arrow-function)
+* [Self Invokable Function](#invokable-function)
 
 <a name='pure-function'></a>
 ## Pure Function
@@ -70,3 +75,13 @@ function multiply(a,b, func){
 var myFunc = multiply(4,3,sum);
 console.log(myFunc());
 ```
+<a name='function-expression'></a>
+## Function Expression
+<a name='anonymous-function'></a>
+## Anonymous Function
+<a name='function-return'></a>
+## Function Return Function
+<a name='arrow-function'></a>
+## Arrow Function
+<a name='invokable-function'></a>
+## Self Invokable Function
