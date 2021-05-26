@@ -1,9 +1,7 @@
 # JavaScript Core Concepts
 
 <!------------------------------------------------------
---------------------------------------------------------
 ## ####     JAVASCRIPT HOISTING   #######
----------------------------------------------------------
 -------------------------------------------------------->
 
 <details>
@@ -32,7 +30,7 @@ var a; // Variable is declared after using it.
 function func(){ /// function is created after it is used.
 
   a(); // a function is called inside a function. it will go for it and skip the line below.
-  console.log('ithsi is a primary function');
+  console.log('this is a primary function');
 };
 
 function a(){ // this function is called on another function;
@@ -45,6 +43,18 @@ function one(){
   console.log('new function');
 };
 newFunc(); // it will return its real value.
+
+
+// Hoisting in variables with let and var
+console.log(a); // give an error.
+let a; // a is declared to undefined;
+console.log(a);
+a = 'bangladesh'; // a is assigned a value;
+console.log(a);
+
+console.log(b); // b is declared to undefined;
+var b = 'bangladesh'; // b is assigned a value;
+console.log(b);
 ```
 
 **Note**: For details on printing priority look at scope Example underneath this.
@@ -52,9 +62,7 @@ newFunc(); // it will return its real value.
 </details>
 
 <!------------------------------------------------------
----------------------------------------------------------
 ## #######     JAVASCRIPT SCOPE  #######
---------------------------------------------------------
 -------------------------------------------------------->
 
 <details>
@@ -65,12 +73,12 @@ newFunc(); // it will return its real value.
 **Lexical Scope**:
  JavaScript Compiler tokenize every word variable, valued and functions that's called **_Lexim_**
  When Compiler start leximing Compiler fix scope for every variable, values, functions. This core scoping concept is called **_Lexical Scope_**. <br><br>
-**BlockChain Scope**:  Blockchain scope is relational scope.
-Relation between scopes like  parents, child, siblings is blockchain scope.
-Blockchain means maintain a chain between parents, child and siblings.
+**Scope Chain**:  scope chain is relational scope.
+Relation between scopes like  parents, child, siblings is scope chain.
+scope chain means maintain a chain between parents, child and siblings.
 
 ```JavaScript
-// Example of BlockChain Scope.
+// Example of scope chain.
 
       var a = 11;
       function A(){
@@ -117,9 +125,7 @@ Blockchain means maintain a chain between parents, child and siblings.
 </details>
 
 <!------------------------------------------------------
---------------------------------------------------------
 ## ##     var, let, const Strict Mode   ########
----------------------------------------------------------
 -------------------------------------------------------->
 
 <details>
@@ -132,9 +138,7 @@ Blockchain means maintain a chain between parents, child and siblings.
 </details>
 
 <!------------------------------------------------------
----------------------------------------------------------
 #######     JAVASCRIPT CLOSURE     ######
----------------------------------------------------------
 -------------------------------------------------------->
 
 <details>
@@ -246,5 +250,49 @@ for(var a = 0; a < 3; a++){
 }
 console.log('after for loop');
 ```
+
+</details>
+
+<!------------------------------------------------------
+## #######     OBJECT ORIENTED PROGRAMMING  #######
+-------------------------------------------------------->
+
+<details>
+<summary><b>Object Oriented Programming</b></summary>
+<br>
+OOP is a programming diagram based on object. Basic concepts of OOP.
+<a href="https://blog.10minuteschool.com/jhankar-mahbub-programminger-bolod-to-boss-oop/">Basic Concepts Of OOP in Bangla.</a><br><br>
+
+__Object__: When we talk about OOP, the first thing comes in mind what is object. Object: Anything which takes multiple properties to describe is object. Like a person is a objet. How can you describe?  Name : sharif, Profession : web developer, Age : 27, Height : 5.10, eat ( rice, food, drink), work(eat, walk, write code, sleep, gossip). So when you want to describe anything - if that needs multiple things comes in mind to describe, that is an object. like book, car, mobile, computer, house etc; 
+```javascript
+class person{
+        constructor(name, profession, age){
+        this.name = name,
+        this.profession = profession,
+        this.age = age
+        }
+}
+```
+__Property__: Properties are like noun or adj what can describe any object. Any variables are properties in object.thing that can describe an object thats are property like name, profession, age, height.
+<br>
+
+__Methods__: Methods are like verb. When you wand to describe anything of object that is running and continue is methods. Functions are methods. Like person eat, walk, sleep, work that eat function, walk function, sleep function, work function. In OOP we will call it method.
+<br>
+
+__Class__: When using a pattern you will produce multiple object that is class. Like person is patten. a person has name, age, profession, height. this is pattern. Now sharif, remon, abrar, mahmud are object. all have their own name, age, profession, height and some extra thing. but the main pattern is same for all. this pattern is class.
+<br>
+
+__Abstraction__:
+<br>
+
+__Encapsulation__: 'আবদ্দ করা', 'নিজের ঘরের কি হয় তা অন্নকে জানতে না দিয়ে কাজ করা হল' Encapsulation. Its like capsule. We do not know what is inside. but we will give input that that will provide output.
+<br>
+
+__Inheritance__: 'উত্তরাধিকার', when we get something from parents and we can extend it by ourself that is inheritance. Like your father give your land. and you build a home for you on that land. This is called inheritance. in our example person is a pattern. when we extend it like sharif have his name, age, profession, height. But sharif may have some more property or methods. sharif can extend it. This process is Inheritance.<br>
+<a href="http://habluderadda.com/concepts/oop/polymorphism.html"> More About Inheritance In Bangle</a>
+<br>
+
+__Polymorphism__: Means 'বহুরূপী', 'একটা কাজ অনেক ভাবে করা যায়। কিভাবে করল তা বেপার না। কাজ করাটা আসল। Thats call Polymorphism.
+<br>
 
 </details>
