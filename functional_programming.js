@@ -42,4 +42,95 @@ var obj = {
     func : sayName,
 }
 // 3. sayName function is stored in obj Object.
-console.log(obj.func('remon'));
+console.log(obj.func('remon')); 
+
+var sum = 10 + (function (){ return 10; })(); // 4. we created the function as we need it
+console.log(sum);
+
+
+function hi(name,para){
+    return para(name);
+}
+let helloName = hi('sharif', sayName); // 5. SayName function is send by parameter.  
+console.log(helloName);
+
+
+
+function base(b){
+    return function (n){  // 6.  Return a function in a function
+        var result = 1; 
+
+        for(var i = 0; i < b; i++){
+            result *= n;
+        }
+        return result;
+    }
+}
+// Example of function composition.
+// var power = base(3);
+// var result = power(10);
+var result = base(3)(10); // call the function and give parameter of returnable function.
+console.log(result);
+
+
+/***********************************
+ * Inner Function or Nested Function
+ * 
+ *************************************/
+function outer(){
+    function inner(){
+            console.log('i am inner function');
+    }inner();
+    console.log('i am a outer function');
+}
+outer();
+
+
+// Example Of Inner/ Nested Function
+function myFunc(a, b){
+
+    // function add(){
+    //     return a + b; // 15
+    // }
+    // function sub(){
+    //     return a - b; // 5
+    // }
+    // function multiple(){
+    //     return a * b; // 50
+    // }
+    // function div(){
+    //     return a / b; // 2
+    // }
+    // return add() + sub() + multiple() + div(); // 15 + 5 + 50 + 2;
+
+    let f = () =>  a + b;  
+    let e = () =>  a - b; 
+    let g = () =>  a * b; 
+    let h = () =>  a / b; 
+    return f() + e() + g() + h();
+
+}
+
+let myResult = myFunc(10,5);
+console.log(myResult);
+
+
+/******************************
+ * Higher Order Function 
+ * a function should be pure function to make it higher order function 
+ * Callback Function is higher order function
+ * when a function return a function is higher order function
+ * When function can take a function as a parameter is higher order function
+ ******************************/
+
+var array = [ 4,5,6,7,8];
+let mySum = 0;
+array.forEach(function(i){
+    mySum += i;
+    console.log(mySum);
+});
+
+
+
+
+
