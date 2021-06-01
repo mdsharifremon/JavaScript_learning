@@ -8,11 +8,12 @@
 <summary><b> JavaScript Hoisting</b></summary>
 
 <b>Hoisting:</b>
-JavaScript engine working way is basically called hoisting.
-JavaScript engine works in two step.
-JavaScript Code will run line by line. Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope.
+JavaScript engine working way is basically called executional contest.
+JavaScript engine works in two step.JavaScript Code will run line by line. 
+Hoisting is JavaScript's default behavior of moving declarations (variables, function references) to the top of the current scope.
 Hoisting applies to variable declarations and to function declarations.
-Because of this, JavaScript functions can be called before they are declared:<br>
+Because of this, JavaScript functions can be called before they are declared.<br>
+<i>When you declare a variable it will goes to the top the scope where ever you declare it.and when you create a function its body or reference will go to the top. where ever you create it. This basics are Hoisting.</i>
 
 **Creational step**  it declarer variable and assign value undefined to each variable whether it is assigned or not. It will not look for its value.
 For the function it will take the reference of function. It will not execute anything. <br><br>
