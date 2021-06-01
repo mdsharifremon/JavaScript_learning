@@ -282,10 +282,14 @@ __Methods__: Methods are like verb. When you wand to describe anything of object
 __Class__: When using a pattern you will produce multiple object that is class. Like person is patten. a person has name, age, profession, height. this is pattern. Now sharif, remon, abrar, mahmud are object. all have their own name, age, profession, height and some extra thing. but the main pattern is same for all. this pattern is class.
 <br>
 
-__Abstraction__:
+__Abstraction__:hiding unnecessary details. Like music player. You do not have any control on it. But you can go next, prev song. increase or decrease vol. 
+It means implementation details is hidden. But few controls that a user may need that is on your control. 
+Thats abstraction. 
+You can define private property. public property.
+public proper other class can use. but private property no one can access.
 <br>
 
-__Encapsulation__: 'আবদ্দ করা', 'নিজের ঘরের কি হয় তা অন্নকে জানতে না দিয়ে কাজ করা হল' Encapsulation. Its like capsule. We do not know what is inside. but we will give input that that will provide output.
+__Encapsulation__: 'আবদ্দ করা', 'নিজের ঘরের কি হয় তা অন্নকে জানতে না দিয়ে কাজ করা হল' Encapsulation. Its like capsule. We do not know what is inside. but we will give input that that will provide output. Bundling data, property and methods is encapsulation.
 <br>
 
 __Inheritance__: 'উত্তরাধিকার', when we get something from parents and we can extend it by ourself that is inheritance. Like your father give your land. and you build a home for you on that land. This is called inheritance. in our example person is a pattern. when we extend it like sharif have his name, age, profession, height. But sharif may have some more property or methods. sharif can extend it. This process is Inheritance.<br>
@@ -294,5 +298,49 @@ __Inheritance__: 'উত্তরাধিকার', when we get something from
 
 __Polymorphism__: Means 'বহুরূপী', 'একটা কাজ অনেক ভাবে করা যায়। কিভাবে করল তা বেপার না। কাজ করাটা আসল। Thats call Polymorphism.
 <br>
+
+__Factory Pattern__: Factory pattern is a way of creating class though javascript does not have any class.
+```javascript
+let rect = function(width, height){
+  return {
+    width  : width,
+    height : height,
+    draw   : function(){
+                  this.print();
+              },
+    print   : function(){
+              console.log(`My width is ${this.width}`);
+              console.log(`My height is ${this.height}`);
+             },
+  }
+}
+
+let rect2 = rect(40,50);
+rect2.draw();
+```
+
+<br>
+
+__Constructor Pattern__: Constructor pattern is a another way of creating class in javascript. When use constructor pattern keep in mint first letter must be capital letter. Like let Variable = function().
+There is on object in constructor pattern. You have to use this keyword to make a object.
+```javascript
+let Rect = function(width, height){
+
+    this.width = width;
+    this.height = height;
+    this.draw = function(){
+        this.print();
+    }
+    this.print = function(){
+        console.log(`My width is ${this.width}`);
+        console.log(`My height is ${this.height}`);
+        
+    }
+
+}
+let rect2 = new Rect(40,50);
+rect2.draw();
+
+````
 
 </details>

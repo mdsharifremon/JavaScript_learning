@@ -130,7 +130,124 @@ array.forEach(function(i){
     console.log(mySum);
 });
 
+/*************************
+ * CallBack Function
+ ************************/
+function nam(aa, print){
+    print(aa);
+};
+
+nam('sharif', function(name){
+    console.log('mr ' + name);
+});
+
+// function print(name){
+// console.log(name);
+// }
+
+
+let me = {
+
+    person : 'sharif uddin',
+    age : 23, 
+    email : 'sharifuddinremon@gmail.com',
+    print : function(){
+        console.log(this.person + ' is ' + this.age + ' Years old.');
+    }
+}
+me.print();
+
+function printMyself(person,callback){
+    console.log(`person: ${me.person}`);
+    if(me.age > 18){
+        callback(me.email);
+    }
+}
+
+printMyself(me, function(mail){
+            console.log(mail);
+});
+
+
+function host(){
+    console.log('i am parent function');
+    return function(){
+        console.log('i am a child function');
+    }
+}
+host()();
+
+let arr1 = [14,6,78,34,56,78,34,86,32];
+
+arr1.sort(function(a,b){
+    if(a == b){
+        return 0;
+    }else{
+        return (a > b)? 1 : -1;
+    }
+});
+console.log(arr1);
 
 
 
+let person = [
+    {name : 'sharif', age : 24, profession : 'developer'},
+    {name : 'abrar', age : 26, profession : 'designer'},
+    {name : 'jobayer', age : 21, profession : 'engneer'},
+    {name : 'remon', age : 23, profession : 'businessman'},
+    {name : 'sajeed', age : 20, profession : 'students'},
+    {name : 'noman', age : 29, profession : 'farmer'},
+    {name : 'karim', age : 28, profession : 'data engneer'},
+];
 
+person.sort(function(a,b){
+    if(a.age == b.age){
+        return 0;
+    }else{
+        return (a.age < b.age)? 1 : -1;
+    }
+
+});
+
+console.log(person);
+let arr5 = [4,5,6,7,8,9,2];
+
+arr5.forEach(function(a){
+    console.log(a);
+});
+
+
+var LANGUAGE = 'JavaScript';
+var language = 'java';
+
+function getLanguage(){
+
+    if(!language){
+        language = LANGUAGE;
+    }
+        return language;
+}
+console.log(getLanguage());
+
+
+let number = [3,4,5,6,7];
+
+let newResult = number.map( a => a * 3);
+
+
+console.log(newResult);
+
+
+let lang = ['javaScript', 'python', 'php', 'c++'];
+
+function mapS(lan, fn){
+    var newArr = [];
+    for(var i = 0; i < lan.length; i++){
+        newArr.push(fn(lan[i]));
+    }
+    return newArr;
+}
+
+let myesult = mapS(lang, function(lan){
+});
+console.log(myesult); 
