@@ -66,3 +66,5 @@ const BASE_URL = "https://jsonplaceholder.typicode.com";
 // delay(4).then(() => console.log('4 second delay'));
 // delay(5).then(() => console.log('5 second delay'));
 // delay(6).then(() => console.log('6 second delay'));
+
+let p1 = Promise.resolve();
