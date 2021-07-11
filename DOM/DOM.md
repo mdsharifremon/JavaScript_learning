@@ -1,6 +1,5 @@
 __Document Object Model__<br>
 DOM is a api of window object. Document is a element of window object. DOM actually refer to our html document. 
-
 selector provide either Elements or nodes. Element refers to  the only html element. Node refers to html elements and text nodes. 
 
 __Selectors: Provide elements__<br>
