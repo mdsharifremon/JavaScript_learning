@@ -22,9 +22,9 @@
 //     .then((result) => console.log(result))
 //     .catch((err) => console.log(err));
 
-/** 
-* Fetch Api
-*/ 
+/**
+ * Fetch Api
+ */
 const BASE_URL = "https://jsonplaceholder.typicode.com";
 // fetch(`${BASE_URL}/users/4`)
 //     .then((res) => res.json())
@@ -32,8 +32,8 @@ const BASE_URL = "https://jsonplaceholder.typicode.com";
 //     .catch((e) => console.log(e));
 
 /**
- * custom fetch function 
- */ 
+ * custom fetch function
+ */
 
 // function getRequest(url) {
 // 	return new Promise((resolve, reject) => {
@@ -58,7 +58,7 @@ const BASE_URL = "https://jsonplaceholder.typicode.com";
 // 	.catch((err) => console.log(err));
 
 /**
- * @param {Delay Function} that return promise 
+ * @param {Delay Function} that return promise
  */
 // const delay = s => new Promise(resolve => setTimeout(resolve, s * 1000));
 // delay(2).then(() => console.log('2 second delay'));
@@ -67,4 +67,7 @@ const BASE_URL = "https://jsonplaceholder.typicode.com";
 // delay(5).then(() => console.log('5 second delay'));
 // delay(6).then(() => console.log('6 second delay'));
 
-let p1 = Promise.resolve();
+fetch(`${BASE_URL}/users/1`)
+    .then((data) => data.json())
+    .then((res) => console.log(res.address.city))
+    .catch((e)=>console.log(e));
