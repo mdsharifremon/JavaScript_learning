@@ -214,11 +214,10 @@ __Handle Form__
                 </div>
                 <h4>Selected Language:</h4>
                 <p class="lead" id="lang"></p>
-         
         </div>
-    </div>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+    </div>  
 <script>
+    // Checkbox Handling
     let input = document.getElementById('name');
     let inputText = document.getElementById('inputResult');
     let skills = document.getElementsByName('skill');
@@ -249,6 +248,31 @@ __Handle Form__
             }
         })
     })
+
+    // Handle list item and input event
+     let list = document.getElementById('list');
+    list.addEventListener('dblclick', function(e){
+        if(this.contains(e.target)){
+            let listText = e.target.innerText;
+            e.target.innerHTML = '';
+            let inputBox = input(listText);
+            e.target.appendChild(inputBox);
+
+            inputBox.addEventListener('keypress', function(event){
+                if(event.key == 'Enter'){
+                    e.target.innerHTML = event.target.value;
+                }
+            })
+        }
+    })
+    function input(val){
+        let inp = document.createElement('input');
+        inp.type = 'text';
+        inp.className = 'form-control';
+        inp.value = val;
+        return inp;
+    }
+
 </script> 
 </body>
 </html>
