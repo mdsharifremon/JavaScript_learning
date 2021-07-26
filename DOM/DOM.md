@@ -165,16 +165,13 @@ __Handle Form__
     <title>JavaScript</title>
     <style>
         label{
-            margin-bottom: 0;
-            padding-bottom: 0;
-            margin-left:10px;
+            margin: 0;
+            margin-left:15px;
         }
-        
     </style>
 </head>
 <body>
-
-    <div class="container">
+      <div class="container">
         <div class="card p-4" id="card">
             <div class="ul list-group" id="list">
                 <li class="list-group-item">list-item</li>
@@ -183,47 +180,69 @@ __Handle Form__
                 <li class="list-group-item">list-item</li>
                 <li class="list-group-item">list-item</li>
             </div>
-            <button class="btn btn-success" id="btn">Add Item</button>
+            <script>
+                // Handle list item and input event
+                let list = document.getElementById('list');
+                list.addEventListener('dblclick', function(e){
+                    if(this.contains(e.target)){
+                        let listText = e.target.innerText;
+                        e.target.innerHTML = '';
+                        let inputBox = input(listText);
+                        e.target.appendChild(inputBox);
 
-                <div class="form-group my-3">
-                    <input type="text" name="" id="name" placeholder="enter your name" class="form-control">
-                </div>
-                <p class="lead mb-3">My name is <span id="inputResult" class="text-danger"></span></p>
-                <div class="form-group mb-3">
-                    <h4>Select A Language</h4>
-                    <div class="d-flex align-items-center">
-                        <input type="checkbox" value="JavaScript" name="skill" id="js">
-                        <label for="js">Javascript</label>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <input type="checkbox" value="PHP" name="skill" id="php">
-                        <label for="php">PHP</label>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <input type="checkbox" value="Python" name="skill" id="python">
-                        <label for="python">Python</label>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <input type="checkbox" value="SQL" name="skill" id="sql">
-                        <label for="sql">SQL</label>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <input type="checkbox" value="Swift" name="skill" id="sw">
-                        <label for="sw">Swift</label>
-                    </div>
-                </div>
-                <h4>Selected Language:</h4>
-                <p class="lead" id="lang"></p>
+                        inputBox.addEventListener('keypress', function(event){
+                            if(event.key == 'Enter'){
+                                e.target.innerHTML = event.target.value;
+                            }
+                        })
+                    }
+                })
+                function input(val){
+                    let inp = document.createElement('input');
+                    inp.type = 'text';
+                    inp.className = 'form-control';
+                    inp.value = val;
+                    return inp;
+                }
+            </script>
+        <div class="form-group my-3">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name" id="fname" placeholder="name" />
+            <p class="lead">My name is <span id="inputResult"></span></p>
         </div>
-    </div>  
+        <div class="form-control my-2">
+            <h5>Select Your Programming Skill</h5>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" value="Javascript" name="skill" id="js" />
+                <label for="js">Javascript</label>
+            </div>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" value="Python" name="skill" id="python" />
+                <label for="python">Python</label>
+            </div>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" value="PHP" name="skill" id="php" />
+                <label for="php">PHP</label>
+            </div>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" value="SQL" name="skill" id="sql" />
+                <label for="sql">SQL</label>
+            </div>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" value="Swift" name="skill" id="swift" />
+                <label for="swift">Swift</label>
+            </div>
+        </div>
+        <h5>Selected Language</h5>
+        <p id="lang"></p> 
 <script>
     // Checkbox Handling
-    let input = document.getElementById('name');
+    let skillInput = document.getElementById('fname');
     let inputText = document.getElementById('inputResult');
     let skills = document.getElementsByName('skill');
     let checkResult = document.getElementById('lang');
 
-    input.addEventListener('keypress', function(e){
+    skillInput.addEventListener('keypress', function(e){
         if(e.key == 'Enter'){
             inputText.innerHTML = e.target.value;
         }
@@ -248,32 +267,49 @@ __Handle Form__
             }
         })
     })
-
-    // Handle list item and input event
-     let list = document.getElementById('list');
-    list.addEventListener('dblclick', function(e){
-        if(this.contains(e.target)){
-            let listText = e.target.innerText;
-            e.target.innerHTML = '';
-            let inputBox = input(listText);
-            e.target.appendChild(inputBox);
-
-            inputBox.addEventListener('keypress', function(event){
-                if(event.key == 'Enter'){
-                    e.target.innerHTML = event.target.value;
-                }
-            })
-        }
-    })
-    function input(val){
-        let inp = document.createElement('input');
-        inp.type = 'text';
-        inp.className = 'form-control';
-        inp.value = val;
-        return inp;
-    }
-
 </script> 
+
+
+             <form id="form" class="mt-5">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                </div>
+                 <div class="mb-3">
+                    <label for="pass" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="pass" name="pass" placeholder="Password">
+                </div>
+                <select class="form-select mb-3" name="country">
+                    <option selected disabled>Select Your Country</option>
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="india">India</option>
+                    <option value="bhutan">Bhutan</option>
+                    <option value="nepal">Nepal</option>
+                </select>
+                <input value="submit" type="submit" id="submit-btn" class="btn btn-primary" />
+            </form>
+<script>
+    let form = document.getElementById('form');
+
+    form.addEventListener('submit', function(e){
+        e.preventDefault();
+        let formData = {};
+        [...this.elements].forEach(el => {
+            if(el.type != 'submit'){
+                formData[el.name] = el.value;
+            }
+        })
+        console.log(formData);
+    });
+</script> 
+    </div>
+</div> 
 </body>
 </html>
+
 ```
