@@ -67,7 +67,9 @@ const BASE_URL = "https://jsonplaceholder.typicode.com";
 // delay(5).then(() => console.log('5 second delay'));
 // delay(6).then(() => console.log('6 second delay'));
 
-fetch(`${BASE_URL}/users/1`)
-    .then((data) => data.json())
-    .then((res) => console.log(res.address.city))
-    .catch((e)=>console.log(e));
+// fetch(`${BASE_URL}/users/1`)
+//     .then((data) => data.json())
+//     .then((res) => console.log(res.address.city))
+//     .catch((e)=>console.log(e));
+
+
