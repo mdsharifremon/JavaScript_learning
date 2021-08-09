@@ -1,0 +1,27 @@
+{
+  "name": "understand-webpack",
+  "version": "1.0.0",
+  "description": "Understand webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdsharifremon/Learn-JavaScript.git"
+  },
+  "keywords": [
+    "webpack",
+    "javascript",
+    "bundling"
+  ],
+  "author": "sharif uddin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdsharifremon/Learn-JavaScript/issues"
+  },
+  "homepage": "https://github.com/mdsharifremon/Learn-JavaScript#readme",
+  "devDependencies": {
+    "webpack": "^5.49.0"
+  }
+}
