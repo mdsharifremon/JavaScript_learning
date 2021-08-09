@@ -1,0 +1,26 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/style.scss ***!
+  \**************************************************************************************************************/
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a span {
+  font-size: 1rem;
+}
+a:hover {
+  color: red;
+}
+
+*,
+:before,
+:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}

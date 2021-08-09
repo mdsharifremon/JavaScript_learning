@@ -8,3 +8,7 @@ Webpack is a javascript library bundler. It helps to manage packages for develop
   or
   npm i -D webpack
 ```
+#### Webpack CLI
+```cmd
+  npm i -D webpack-cli
+```
